@@ -1,0 +1,17 @@
+import numpy as np
+import random as rn
+
+def enlistar():
+    for i in doc.readlines():
+        lista.append(i) # Crea la lista
+def sorteo():
+    while int(len(lista)) != 0:
+        a = rn.randint(1, int(len(lista)-1))
+        print(lista[0], lista[a])
+        lista.pop(a)
+        lista.pop(0)
+doc = open("pokemones.txt", "r")
+lista = []
+enlistar()
+print("Este programa sortea parejas de nombres en una lista par.")
+print(sorteo())
